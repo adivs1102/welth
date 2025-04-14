@@ -1,6 +1,6 @@
 import DashboardPage from "./page";
-import Loading from "./loading";
-import { Suspense } from "react";
+// import Loading from "./loading";
+// import { Suspense } from "react";
 
 export default function Layout() {
   return (
@@ -10,9 +10,9 @@ export default function Layout() {
           Dashboard
         </h1>
       </div>
-      <Suspense fallback={<Loading />}>
-        <DashboardPage />
-      </Suspense>
+      {/* <Suspense fallback={<Loading />}> */}
+      <DashboardPage />
+      {/* </Suspense> */}
     </div>
   );
 }
